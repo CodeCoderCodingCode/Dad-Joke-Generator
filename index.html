@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Random Joke Generator</title>
+</head>
+
+<body>
+<!-- Partikel-Container -->
+<div id="particles-js"></div>
+
+<div id="start-menu" class="animated">
+    <h1>Random Joke Generator</h1>
+    <button onclick="startProgramm()">Press Here to Generate!</button>
+</div>
+
+<div id="joke-container">
+    <h2 id="find-joke-title">Find the perfect Dad joke!</h2> <!-- Neuer Titel -->
+    <input type="text" id="joke-search" placeholder="Search for a joke...">
+    <button onclick="searchJoke()">Search Joke</button>
+    <!-- Witz wird jetzt in der transparenten Zeile angezeigt -->
+    <div id="joke-output">Joke will appear here!</div>
+    <button onclick="generateJoke()">Generate Joke</button>
+    <button onclick="copyJoke()">Copy Joke</button>
+</div>
+
+<script type="module" src="main.js"></script>
+</body>
+</html>
